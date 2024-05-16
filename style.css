@@ -1,0 +1,143 @@
+body {
+     font-family: "Roboto", sans-serif;
+     background-color: #c0d8e2;
+     margin: 0;
+     padding: 0;
+     transition: background-color 0.3s ease; /* Add transition effect for background color */
+     }
+    
+     .container {
+     max-width: 600px;
+     margin: 50px auto;
+     padding: 20px;
+     background-color: #f3ebed;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+     transition: box-shadow 0.3s ease; /* Add transition effect for box shadow */
+     }
+    
+    h1 {
+     text-align: center;
+     color: #333;
+     transition: color 0.3s ease; /* Add transition effect for color */
+     }
+    
+     .input-section {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+    }
+    
+     input[type="text"] {
+     flex: 1;
+     padding: 10px;
+     margin-right: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     outline: none;
+     transition: border-color 0.3s ease; /* Add transition effect for border color */
+     }
+    
+     input[type="text"]:focus {
+     border-color: #4caf50; /* Change border color on focus */
+     }
+    
+     button {
+     padding: 10px 20px;
+     background-color: #4caf50;
+     color: white
+     border none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease,
+     box-shadow 0.3s ease; /* Add transition effects */
+     font-size: 16px;
+     font-weight: bold;
+     font-family: "Roboto", sans-serif;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    }
+
+ button:hover {
+ background-color: #45a049;
+ transform: scale(1.05); /* Add scaling effect */
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add glow effect on hover */
+ }
+
+ .complete-button {
+ background-color: #4caf50;
+ color: white
+ }
+
+.complete-button:hover {
+ background-color: #45a049;
+ }
+
+ .delete-button {
+ background-color: #f44336;
+ color: white
+ }
+
+ .delete-button:hover {
+ background-color: #f44336;
+ }
+
+ ul {
+ list-style-type: none;
+ padding: 0;
+ }
+
+ li {
+ padding: 15px;
+ border-bottom: 1px solid #ccc;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ transition: background-color 0.3s ease; /* Add transition effect for background color */
+ }
+
+ li:last-child {
+ border-bottom: none;
+ }
+
+ li:hover {
+ background-color: #f9f9f9;
+ }
+
+ .task-buttons button {
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ transition: color 0.3s ease; /* Add transition effect for color */
+ }
+
+ .task-buttons button:hover 
+ color #f44336
+ }
+
+ .task-text.completed {
+ animation-name: completeAnimation;
+ animation-duration: 1s;
+ font-style: italic;
+ color: #555;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+ background: linear-gradient(to right, #4caf50, #45a049);
+ border-radius: 5px;
+ padding: 10px 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ transition: background 0.3s ease, transform 0.3s ease; /* Add transition effect for
+background and transform */
+ }
+
+ @keyframes completeAnimation {
+ 0% {
+ background-color: transparent;
+ }
+ 50% {
+ background-color: #4caf50;
+ }
+ 100% {
+ background-color: transparent;
+ }
+ }
